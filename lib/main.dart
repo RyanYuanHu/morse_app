@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   initPlatformState() async {
-    bool hasFlash = await Flashlight.hasFlashLight;
+    bool hasFlash = await Flashlight.hasFlashlight;
     print("Device has flash ? $hasFlash");
     setState(() { _hasFlash = hasFlash; });
   }

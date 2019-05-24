@@ -1,5 +1,5 @@
 PODS:
-  - flashlight (0.0.1):
+  - flashlight (0.1.1):
     - Flutter
   - Flutter (1.0.0)
 
@@ -14,9 +14,9 @@ EXTERNAL SOURCES:
     :path: ".symlinks/flutter/ios"
 
 SPEC CHECKSUMS:
-  flashlight: 390f51a960fa63316698ae78607827acffb94c85
+  flashlight: 2cc087674f54798feacb9d2220afcf20fd56d2d0
   Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
 
-PODFILE CHECKSUM: aff02bfeed411c636180d6812254b2daeea14d09
+PODFILE CHECKSUM: 48e5cf237b66e8261e52d2f6cfd261e0e1acb095
 
 COCOAPODS: 1.6.1
