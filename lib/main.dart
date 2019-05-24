@@ -52,13 +52,16 @@ class _MyHomePageState extends State<MyHomePage> {
   int _keyDown = 0;
   bool _hasFlash = false;
 
-
   Future turnOn() async {
-    await Flashlight.lightOn();
+    if (_hasFlash) {
+      await Flashlight.lightOn();
+    }
   }
 
   Future turnOff() async {
-    await Flashlight.lightOff();
+    if (_hasFlash) {
+      await Flashlight.lightOff();
+    }
   }
 
   @override
@@ -70,12 +73,13 @@ class _MyHomePageState extends State<MyHomePage> {
   initPlatformState() async {
     bool hasFlash = await Flashlight.hasFlashlight;
     print("Device has flash ? $hasFlash");
-    setState(() { _hasFlash = hasFlash; });
+    setState(() {
+      _hasFlash = hasFlash;
+    });
   }
 
   @override
   Widget build(BuildContext context) {
-
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
